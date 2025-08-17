@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Voting Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Multi-Position Election</h1>
+        </header>
+        <main>
+            <div class="form-group">
+                <label for="userId">User ID Number</label>
+                <input type="text" id="userId" placeholder="Enter your ID number">
+            </div>
+
+            <div id="positions">
+                <div class="position-group" data-position="presidents">
+                    <h2>Presidents</h2>
+                    <button class="candidate-btn">Candidate A</button>
+                    <button class="candidate-btn">Candidate B</button>
+                </div>
+
+                <div class="position-group" data-position="vicePresidents">
+                    <h2>Vice Presidents</h2>
+                    <button class="candidate-btn">Candidate C</button>
+                    <button class="candidate-btn">Candidate D</button>
+                </div>
+
+                <div class="position-group" data-position="treasurers">
+                    <h2>Treasurers</h2>
+                    <button class="candidate-btn">Candidate E</button>
+                    <button class="candidate-btn">Candidate F</button>
+                </div>
+
+                <div class="position-group" data-position="secretaries">
+                    <h2>Secretaries</h2>
+                    <button class="candidate-btn">Candidate G</button>
+                    <button class="candidate-btn">Candidate H</button>
+                </div>
+
+                <div class="position-group" data-position="pios">
+                    <h2>PIOs</h2>
+                    <button class="candidate-btn">Candidate I</button>
+                    <button class="candidate-btn">Candidate J</button>
+                </div>
+            </div>
+
+            <button id="submitVoteBtn">Submit Vote</button>
+            <p id="messageArea"></p>
+            
+            <div class="navigation-link">
+                <a href="dashboard.html">View Election Dashboard</a>
+            </div>
+        </main>
+    </div>
+    <script src="voting.js"></script>
+</body>
+</html>

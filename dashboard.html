@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Election Dashboard</h1>
+        </header>
+        <main>
+            <div id="dashboard-content">
+                <div class="tally-section">
+                    <h2>Presidential Tally</h2>
+                    <ul id="presidents-tally"></ul>
+                </div>
+                <div class="tally-section">
+                    <h2>Vice Presidential Tally</h2>
+                    <ul id="vicePresidents-tally"></ul>
+                </div>
+                <div class="tally-section">
+                    <h2>Treasurer Tally</h2>
+                    <ul id="treasurers-tally"></ul>
+                </div>
+                <div class="tally-section">
+                    <h2>Secretary Tally</h2>
+                    <ul id="secretaries-tally"></ul>
+                </div>
+                <div class="tally-section">
+                    <h2>PIO Tally</h2>
+                    <ul id="pios-tally"></ul>
+                </div>
+            </div>
+            
+            <button id="refreshBtn">Refresh</button>
+
+            <div class="navigation-link">
+                <a href="index.html">Back to Voting Page</a>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
